@@ -1,0 +1,86 @@
+#slika {
+  width: 100%;
+  max-width: 250px;
+  min-width: 150px;
+  border: 2px dashed #000000;
+}
+
+#mreza {
+  display: grid;
+  grid-template-areas:
+    "navig navig"
+    "jedro meni";
+  grid-gap: 10px;
+  background-color: #FFFBE6;
+}
+
+#navig {
+  grid-area: navig;
+}
+
+#meni {
+  grid-area: meni;
+}
+
+#jedro {
+  grid-area: jedro;
+}
+
+#mreza>div {
+  /*Vsi div elementi ki so direktni potomci mreze*/
+  background-color: #FFFBE6;
+  /*Modro ozadje mreze*/
+}
+
+#navig {
+  text-align: center;
+  padding: 20px;
+  /*margin-bottom: 20px;*/
+}
+
+#navig * {
+  margin: 0 20px;
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+#jedro {
+  margin-left: 10px;
+}
+
+.naslov {
+  text-shadow: 3px 5px 2px #474747, 11px 8px 11px rgba(0,0,0,0.31);
+}
+
+#meni {
+  margin-right: 10px;
+}
+
+#menibio {
+  padding-top: 40px;
+  padding-right: 15px;
+}
+
+#menikont {
+  padding-top: 20px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+}
+
+body {
+  padding: 40px;
+  background-color: #FFF2B3;
+}
+
+#mreza * {
+  /*background-color: white;*/
+}
+
+#mreza {
+/*font-family: 'Enriqueta', serif;*/
+  font-family: 'Indie Flower', cursive;
+  -webkit-box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.75);
+}
